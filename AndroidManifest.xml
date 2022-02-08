@@ -75,7 +75,7 @@
 
         <meta-data
             android:name="dev.kdrag0n.dyntheme.privileged.sys.boot_animation_colors"
-            android:value="@array/config_boot_animation_colors" />
+            android:resource="@array/config_boot_animation_colors" />
 
     </application>
 
