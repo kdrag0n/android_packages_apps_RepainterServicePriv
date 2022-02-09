@@ -106,7 +106,7 @@ class SystemPrivilegedServiceImpl(
         block()
     } catch (e: Exception) {
         Log.e(TAG, "$method failed", e)
-        throw IllegalStateException("$method failed", e)
+        throw IllegalStateException("$method failed: ${e.stackTraceToString()}", e)
     }
 
     private fun persistUninstallActions() {
